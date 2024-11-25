@@ -1,0 +1,29 @@
+// start .newsBlock
+.newsBlock {
+	padding-top: 20px;
+	padding-bottom: 77px;
+	h2 {
+		margin-bottom: 28px;
+		@media screen and (min-width: 992px) {
+			margin-bottom: 84px;
+		}
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		@media screen and (min-width: 992px) {
+			gap: 63px 24px;
+		}
+	}
+	.news-card {
+		box-sizing: border-box;
+		width: 100%;
+		@media screen and (min-width: 568px) {
+			max-width: calc((100% / 2) - 12px);
+		}
+		@media screen and (min-width: 992px) {
+			max-width: calc((100% / 3) - 16px);
+		}
+	}
+} // end.newsBlock

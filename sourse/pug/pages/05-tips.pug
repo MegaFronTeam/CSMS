@@ -1,0 +1,42 @@
+extends ../layout/main.pug
+
+include ../customBlocks/page/_page.pug
+include ../customBlocks/docs/_docs.pug
+include ../customBlocks/newsBlock/_newsBlock.pug
+include ../customBlocks/form/_form.pug
+include ../customBlocks/partners/_partners.pug
+include ../customBlocks/contacts/_contacts.pug
+include ../customBlocks/partners/_partners.pug
+
+include ../customBlocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Карьера'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	//- +parts('header')
+	main
+		+page('проект', 'Молодёжные</br>советы', '', 'img/header-block-4.png')
+			+b.organization
+				.content
+					+e.wrapper--full-size
+						div
+							h2 Для кого? 
+							//- 
+							h2 Для чего нужны молодежные советы?
+							div(class="organization__wrap spacer_top")
+								div(class="organization__about")
+									p Молодёжные советы компаний - это сообщества молодых сотрудников, созданные для поддержки социально трудовой адаптации и интеграции молодёжи в корпоративные и производственные процессы. Молодёжные советы предоставляют молодым сотрудникам возможность реализовать свой потенциал, активно участвовать в жизни компании, а также способствуют их профессиональному и карьерному росту. Наша миссия помочь компаниям эффективно адаптировать молодых специалистов в корпоративную культуру, содействовать их профессиональному и личностному росту для достижения стратегических целей компании.
+		+newsBlock(3, 'Молодёжные советы реализуют')
+		+partners('Компании с действующими молодёжными советами')
+		+docs('База знаний', 3, 'В этом разделе вы найдете полезные материалы, нормативно правовые акты, статьи, исследования и лучшие практики по созданию и развитию молодёжных советов компаний. Это источник вдохновения и практических рекомендаций.')
+		+form()
+		+contacts
+	+footer()

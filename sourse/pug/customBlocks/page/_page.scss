@@ -1,0 +1,115 @@
+// start .page
+.page {
+	padding-bottom: 50px;
+	@media screen and (min-width: 992px) {
+		padding-bottom: 103px;
+	}
+	// &__main {
+	// 	padding-bottom: 56px;
+	// }
+	&__about {
+		@media screen and (min-width: 992px) {
+			min-height: 444px;
+		}
+	}
+	&__main-bg {
+		margin: 0 auto;
+	}
+	&__img {
+		margin-top: 52px;
+		@media screen and (min-width: 992px) {
+			margin-top: 103px;
+		}
+	}
+	@media (max-width: 567px) {
+		.page__about h1 {
+			font-size: 28px;
+		}
+	}
+	&__main-left {
+		max-width: 100%;
+	}
+	h1 {
+		span {
+			font-weight: 300;
+			font-size: 30px;
+			display: block;
+			line-height: 1;
+		}
+	}
+	.organization {
+		&__about {
+			max-width: 1117px;
+			width: 100%;
+		}
+		h4 {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 1.29;
+			margin-bottom: 24px;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px 24px;
+			li {
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+				width: 100%;
+				padding: 24px;
+				position: relative;
+				background: #ffffff;
+				box-shadow: 0 4px 33px #c9dae3;
+				border-radius: 32px;
+				@media screen and (min-width: 568px) {
+					max-width: calc((100% / 2) - 12px);
+				}
+				img {
+					flex: 0 0 auto;
+					margin-right: 13px;
+				}
+			}
+		}
+		&__wrapper {
+			display: flex;
+			column-gap: 84px;
+			flex-direction: column;
+			@media screen and (min-width: 992px) {
+				flex-direction: row;
+			}
+			& > div {
+				@media screen and (min-width: 992px) {
+					flex: 0 0 calc(50% - 42px);
+				}
+			}
+			&--full-size {
+				.organization__about {
+					max-width: 100%;
+				}
+				& > div {
+					@media screen and (min-width: 992px) {
+						flex: 1 0 100%;
+					}
+				}
+			}
+		}
+		&__item-wrap {
+			@media screen and (min-width: 992px) {
+				max-width: 648px;
+			}
+			ul {
+				li {
+					// min-width: 287px;
+					@media screen and (min-width: 568px) {
+						max-width: 100%;
+						&:nth-child(2),
+						&:nth-child(3) {
+							max-width: calc(50% - 12px);
+						}
+					}
+				}
+			}
+		}
+	}
+} // end.page

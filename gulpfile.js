@@ -354,7 +354,8 @@ class gs {
 				sourse + "/sass/**/*.scss",
 				`!${sourse}/sass/custom-bootstrap.scss`,
 				sourse + "/sass/**/*.sass",
-				`${sourse}/pug/blocks/**/*.scss`,
+				// `${sourse}/pug/blocks/**/*.scss`,
+				`${sourse}/pug/customBlocks/**/*.scss`,
 			],
 			{usePolling: true},
 			gs.styles
@@ -368,8 +369,8 @@ class gs {
 				`!${sourse}/sass/_fonts.scss`,
 				sourse + "/sass/**/*.sass",
 			],
-			{usePolling: true},
-			gs.bootstrapstyles
+			{usePolling: true}
+			// gs.bootstrapstyles
 		);
 		watch(
 			[sourse + "/pug/**/*.pug", sourse + "/pug/content.json"],
@@ -391,7 +392,8 @@ export let imgAll = series(gs.cleanimg, gs.img);
 export let libs = series(gs.cleanlibs, gs.copyLibs);
 export let sprite = series(gs.svg, gs.svgCopy);
 export let sprite2 = series(gs.svgC, gs.svgCopyC);
-export let styles = parallel(gs.bootstrapstyles, gs.styles);
+// export let styles = parallel(gs.bootstrapstyles, gs.styles);
+export let styles = parallel(gs.styles);
 
 export default series(
 	gs.common,

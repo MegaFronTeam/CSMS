@@ -1,0 +1,26 @@
+include ../../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+include components/menu.pug
+include components/icon.pug
+include components/breadcrumb.pug
+include components/pugination.pug
+include components/soc.pug
+include components/pic.pug
+include components/img.pug
+include components/btn.pug
+
+include components/ddgroup.pug
+
+mixin newsCard(img, title, link)
+	+b.news-card
+		+img(img)
+		h4!= title
+		+e.link(href='#')!= link
+		block
+		.social
+			a(href="https://vk.com/rosmolodez.business", class="social__link")
+				svg.svg-icon.icon-social-vk
+					use(xlink:href="/static/assets/img/sprite.svg#icon-social-vk")
+			a(href="httsp://t.me/", class="social__link")
+				svg.svg-icon.icon-social-tl
+					use(xlink:href="/static/assets/img/sprite.svg#icon-social-tl")

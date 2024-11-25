@@ -1,0 +1,31 @@
+// start .project
+.project {
+	--gap: 30px;
+	margin-top: -90px;
+	@media screen and (min-width: 550.99px) {
+		margin-top: -120px;
+	}
+	h4 {
+		color: #fff;
+		font-size: 24px;
+		margin-bottom: 26px;
+		// line-height: 1.92;
+		@media screen and (min-width: 550.99px) {
+			font-size: 30px;
+		}
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: var(--gap);
+	}
+	&__wrap {
+		width: 100%;
+		@media screen and (min-width: 960px) {
+			max-width: calc((100% / 2) - (var(--gap) / 2));
+		}
+		&:after {
+			background: var(--bg);
+		}
+	}
+} // end.project

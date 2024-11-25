@@ -1,0 +1,41 @@
+.news-card {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	background-color: #f9f9f9;
+	border-radius: 32px;
+	box-sizing: border-box;
+	@media screen and (min-width: 988px) {
+		min-height: 733px;
+	}
+	img {
+		align-self: flex-start;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 24px;
+	}
+	h4 {
+		font-size: 20px;
+		margin-bottom: 16px;
+		line-height: 1.3;
+		@media screen and (min-width: 988px) {
+			font-size: 24px;
+		}
+	}
+	&__link {
+		color: #1a67fc;
+		margin-bottom: 24px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+	p {
+		font-weight: 600;
+		line-height: 1;
+		&:not(:last-of-type) {
+			margin-bottom: 16px;
+		}
+	}
+	.social {
+		margin-top: auto;
+	}
+}

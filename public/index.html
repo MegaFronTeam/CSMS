@@ -6,253 +6,260 @@
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Nunito+Sans&amp;display=swap" rel="stylesheet">
+		<link href="mainSiteCss/reset.css" rel="stylesheet"/>
+		<link href="mainSiteCss/style.css" rel="stylesheet"/>
+		<link href="mainSiteCss/modern_style.css" rel="stylesheet"/>
+		<link href="mainSiteCss/patch.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
-		<script>
-			function addBlock(elem) {
-				fetch(`parts/${elem}.html`)
-					.then(response => response.text())
-					.then( text => {
-						const wrap = document.querySelector(`#${elem}Wrap`);
-						wrap.insertAdjacentHTML('afterend', text);
-						wrap.previousElementSibling.remove()
-						wrap.remove();
-					});
-			}
-		</script>
 	</head>
 	<body class="main-page">
-		<div class="main-wrapper">
-			<script>addBlock(`header`)</script>
-			<div id="headerWrap"></div>
+		<div class="main-wrapper page-wrap">
 			<main>
-				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+				<!-- start main-->
+				<section class="main content">
+					<div class="main__left va-middle">
+						<div class="main__middle">
+							<h1>
+								Центр
+								содействия
+								молодым
+								специалистам
+							</h1>
+							<p>
+								Вовлекаем молодёжь в профессиональную,
+								предпринимательскую и инновационную деятельность
+							</p><a class="blue-btn main__link" href="/about/">
+								<svg class="svg-icon icon-mail">
+									<use xlink:href="/static/assets/img/sprite.svg#icon-mail"></use>
+								</svg><span>Узнать больше</span></a>
 						</div>
-						<div class="row"></div>
-					</div>
-				</div>
-				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+					</div><i class="main__bg"></i>
+				</section>
+				<!-- end main-->
+				<!-- start who-->
+				<section class="who">
+					<div class="content spacer">
+						<div class="who__about">
+							<h2>Кто мы такие?</h2>
+							<p>
+								Федеральное государственное бюджетное учреждение
+								«Центр содействия молодым специалистам» (ЦСМС) –
+								подведомственное учреждение Федерального агентства
+								по делам молодёжи (Росмолодёжь)
+							</p>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+						<div class="who__list flex-container">
+							<div class="who__item who__item_full-width"><i class="who__item-icon who__item-icon_1"></i>
+								<p class="who__item-text">
+									Вовлекаем молодёжь в профессиональную,
+									предпринимательскую и инновационную деятельность
+								</p>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="who__item"><i class="who__item-icon who__item-icon_2"></i>
+								<p class="who__item-text">Формируем надпрофессиональные навыки</p>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="who__item"><i class="who__item-icon who__item-icon_3"></i>
+								<p class="who__item-text">Создаём условия для поддержки молодёжных проектов</p>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="who__item"><i class="who__item-icon who__item-icon_4"></i>
+								<p class="who__item-text">Формируем молодёжные сообщества</p>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="who__item"><i class="who__item-icon who__item-icon_5"></i>
+								<p class="who__item-text">Открываем<br/>таланты</p>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end sCatalog-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
-						</div>
-						<div class="sForm__row row">
-						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<button class="form-wrap__btn btn btn-primary" type="submit">Submit
-								</button>
-								<div class="form-wrap__policy">
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-									</label>
-								</div>
-							</form>
 						</div>
 					</div>
 				</section>
-				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
+				<!-- end who-->
+				<!-- start categories-->
+				<section class="categories content">
+					<div class="block-top spacer">
+						<h2>Выбирай трек</h2>
+						<p class="block-desc">Выбери свое направление деятельности и двигайся вперед</p>
+					</div>
+					<div class="categories__list spacer_top">
+						<div class="category violet"><a href="/tracks/career/">
+								<div class="category__text">
+									<h3>Росмолодёжь.Карьера</h3>
+									<p class="category__desc">Трек Росмолодёжь.Карьера помогает молодым людям определиться со&amp;nbsp;специализацией, получить необходимые навыки и компетенции и найти работу.</p>
+								</div><img class="category__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/categories/logo-3.svg" alt="Лого"/></a></div>
+						<div class="category blue"><a href="/tracks/tech/">
+								<div class="category__text">
+									<h3>Росмолодёжь.Технологии</h3>
+									<p class="category__desc">Трек направлен на реализацию интеллектуального потенциала молодых людей и развитие технологической среды в&amp;nbsp;России</p>
+								</div><img class="category__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/categories/logo-2.svg" alt="Лого"/></a></div>
+						<div class="category orange"><a href="/tracks/business/">
+								<div class="category__text">
+									<h3>Росмолодёжь.Бизнес</h3>
+									<p class="category__desc"></p>
+									<p>Проекты трека Росмолодёжь.Бизнес помогают молодым людям реализовать собственный потенциал в&amp;nbsp;предпринимательстве — определиться с&amp;nbsp;нишей, получить знания, навыки, компетенции, необходимые для ведения и&amp;nbsp;развития собственного дела</p>
+									<p></p>
+								</div><img class="category__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/categories/logo-1.svg" alt="Лого"/></a></div>
+					</div>
+				</section>
+				<!-- end categories-->
+				<!-- start project-->
+				<section class="project">
+					<div class="content">
+						<div class="project__wrap" style="--bg: linear-gradient(0deg, rgba(26, 103, 252, 0.35), rgba(26, 103, 252, 0.35))">
+							<div class="project__text">
+								<h4>Проект Точки притяжения</h4>
+								<p>
+									Конкурс на формирование группы
+									пространств, которые являются местом
+									притяжения, общения и генерации идей
+									российской молодёжи. На этих площадках
+									встречаются эксперты и молодёжь из
+									регионов, проводятся форумы, мастер-
+									классы, семинары и встречи.
+								</p>
+							</div><a class="white-transparent-btn project__link" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><img class="project__bg photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/bg.jpg" alt="Фон"/><img class="project__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/logo.svg" alt="Лого"/>
 						</div>
-						<div class="sContact__row row">
+						<div class="project__wrap" style="--bg: rgba(108, 54, 254, 0.43)">
+							<div class="project__text">
+								<h4>Проект Молодёжные советы</h4>
+								<p>Молодёжные советы компаний - это сообщества молодых сотрудников, созданные для поддержки социально трудовой адаптации и интеграции молодёжи в корпоративные и производственные процессы. </p>
+							</div><a class="white-transparent-btn project__link" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><img class="project__bg photo-full-size" src="/img/project-bg-2.png" alt="Фон"/><img class="project__logo" src="/img/svg/project-logo-2.svg" alt="Лого"/>
 						</div>
 					</div>
 				</section>
-				<!-- end sContact-->
+				<!-- end project-->
+				<!-- start events-->
+				<section class="events content">
+					<div class="block-top spacer">
+						<h2>Проекты и события</h2>
+						<p class="block-desc">Проекты, в которых стоит принять участие</p>
+					</div>
+					<div class="events__list flex-container">
+						<div class="event"><a class="event__photo" href="/events/startteh/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318462_1.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318463.png" alt="Лого"/></span><a class="event__title" href="/events/startteh/">СтартТех</a></div>
+							<ul class="event__data">
+								<li>13.10-18.10</li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/biznes-ne-spit-razboryi-360/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318457.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318458.png" alt="Лого"/></span><a class="event__title" href="/events/biznes-ne-spit-razboryi-360/">«Бизнес не спит. Разборы 360»</a></div>
+							<ul class="event__data">
+								<li>24.09-12.11</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/biznespokolenie/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318449.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318450_1.png" alt="Лого"/></span><a class="event__title" href="/events/biznespokolenie/">Бизнес.Поколение</a></div>
+							<ul class="event__data">
+								<li>02.09-30.10</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/biznes-missii-v-zarubezhnyie-stranyi/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318459.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318460.png" alt="Лого"/></span><a class="event__title" href="/events/biznes-missii-v-zarubezhnyie-stranyi/">Бизнес-миссии в зарубежные страны</a></div>
+							<ul class="event__data">
+								<li>26.08-26.11</li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/biznesnastavniki/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318454.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318455.png" alt="Лого"/></span><a class="event__title" href="/events/biznesnastavniki/">Бизнес.Наставники</a></div>
+							<ul class="event__data">
+								<li>05.08-01.12</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/den-s-predprinimatelem-2/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318451.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318452.png" alt="Лого"/></span><a class="event__title" href="/events/den-s-predprinimatelem-2/">День с предпринимателем</a></div>
+							<ul class="event__data">
+								<li>19.07-15.11</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/market-molodyih/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318447.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318448.png" alt="Лого"/></span><a class="event__title" href="/events/market-molodyih/">Маркет Молодых</a></div>
+							<ul class="event__data">
+								<li>01.05-31.12</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/klub-molodyih-predprinimatelej-3/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2024/8/26/Frame_1321318446_1.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2024/8/26/Frame_1321318445.png" alt="Лого"/></span><a class="event__title" href="/events/klub-molodyih-predprinimatelej-3/">Клуб молодых предпринимателей</a></div>
+							<ul class="event__data">
+								<li>01.01-31.12</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+						<div class="event"><a class="event__photo" href="/events/konkurs-bitva-nastavnikov/"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/event_pics/2023/7/14/Frame_329.jpg" alt=""/></a>
+							<div class="event__about va-middle"><span class="event__logo"><img class="photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/events/2023/7/14/Frame_596_1.png" alt="Лого"/></span><a class="event__title" href="/events/konkurs-bitva-nastavnikov/">Проект «Бизнес.Наставники»</a></div>
+							<ul class="event__data">
+								<li>02.10-11.11</li>
+								<li>Россия</li>
+							</ul>
+						</div>
+					</div>
+					<div class="events__bottom"><a class="blue-transparent-btn events__else" href="/events/">Показать еще</a></div>
+				</section>
+				<!-- end events-->
+				<!-- start partners-->
+				<section class="partners content">
+					<div class="block-top spacer">
+						<h2>Партнёры</h2>
+					</div>
+					<div class="partners__list flex-container">
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai//static/assets/img/partners/asi.svg" alt="Агенство Стратегических Инициатив"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/delros.svg" alt="Деловая Россия"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/minec.svg" alt="Мин эконом Развития"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/minpros.svg" alt="Министерство Просвящения"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/mpt.svg" alt="Минпромторг"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/opros.svg" alt="Опора России"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/web.svg" alt="ВЭБ РФ"/></div>
+						<div class="partner"><img class="pos-center" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/partners/sber.svg" alt="Сбер"/></div>
+					</div>
+				</section>
+				<!-- end partners-->
 			</main>
-			<script>addBlock(`footer`)</script>
-			<div id="footerWrap"></div>
+			<!-- start footer-->
+			<footer class="footer content">
+				<div class="footer__wrap">
+					<div class="footer__top spacer_top">
+						<div class="footer__left">
+							<div class="site-map">
+								<ul class="site-map__list">
+									<li><a href="/about/">Об организации</a></li>
+									<li><a href="/team/">Наша команда</a></li>
+									<li><a href="/news/">Новости</a></li>
+									<li><a href="/events/">События</a></li>
+								</ul>
+								<ul class="site-map__list">
+									<li><a href="/libmedia/">Медиа</a></li>
+									<li><a href="/docs/">Документы</a></li>
+									<li><a href="/contacts/">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__contact"><a class="footer__contact-link" href="tel:+74956688008">+7 (495) 668-80-08</a>
+								<p class="footer__contact-info">доб. 8005</p>
+							</div>
+							<div class="footer__contact"><a class="footer__contact-link" href="mailto:info@business.fadm.gov.ru">info@business.fadm.gov.ru</a></div>
+						</div>
+					</div>
+					<div class="footer__bottom spacer">
+						<div class="footer__left"><a class="footer__logo" href="/"><img src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/svg/ui/logo-footer.svg"/></a>
+							<p class="copyright">2023. ЦСМС. Все права защищены</p>
+						</div>
+						<div class="footer__right">
+							<div class="social"><a class="social__link" href="https://vk.com/rosmolodez.business">
+									<svg class="svg-icon icon-social-vk">
+										<use xlink:href="/static/assets/img/sprite.svg#icon-social-vk"></use>
+									</svg></a><a class="social__link" href="httsp://t.me/">
+									<svg class="svg-icon icon-social-tl">
+										<use xlink:href="/static/assets/img/sprite.svg#icon-social-tl"></use>
+									</svg></a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- end footer-->
 		</div>
 		<!--  start modals-->
 		<div id="modal-call" style="display: none">
@@ -290,11 +297,6 @@
 		<!-- #modal-call-->
 		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
-		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
-		<script src="libs/swiper/swiper-bundle.min.js"> </script>
-		<script src="libs/inputmask/inputmask.min.js"> </script>
-		<script src="libs/select2/js/select2.min.js"> </script>
-		<script src="libs/select2/js/i18n/ru.js"> </script>
 		<script src="js/JSCCommon.js"></script>
 		<script src="js/common.js"></script>
 	</body>

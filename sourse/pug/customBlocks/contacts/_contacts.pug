@@ -1,0 +1,55 @@
+mixin contacts(data)
+	// start contacts
+	+b.SECTION.contacts.section#contacts&attributes(attributes)
+		.content
+			h2 Контакты проекта
+			.contacts.spacer_top
+				div(class="contacts__list contacts__list_width-fix contacts__col")
+					.contact
+						p(class="contact__title")
+							| Электронная почта
+						p(class="contact__desc")
+							a(href="mailto:info@business.fadm.gov.ru")
+								| info@business.fadm.gov.ru
+					.contact
+						p(class="contact__title")
+							| Телефон
+						p(class="contact__desc")
+						p +7(495) 668-80-08,
+							br
+							| доб. 8005
+						p
+					.contact
+						p(class="contact__title")
+							| Время работы
+						p(class="contact__desc")
+						p 9:00 – 18:00, без обеда
+							br
+							| Выходные: сб, вс
+						p
+					.contact
+						p(class="contact__title")
+							| Адрес:
+						p(class="contact__desc")
+						p 109028, г. Москва,
+							br
+							| Большой Трёхсвятительский переулок, д. 2/1, стр. 1, этаж 4, помещ./ком. I/26
+						p
+				div(class="manager contacts__col spacer_top")
+					img(class="manager__photo", src="	https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/contacts/2024/6/20/%D1%81%D0%B2%D0%B5%D1%82%D0%B0_1.jpg", alt="Шалимова Светлана")
+					div(class="manager__right")
+						p(class="manager__title")
+							| По вопросам
+							br
+							| трудоустройства
+						p Митина Кристина,
+							br
+							| тел.
+							strong +7(495)-668-80-08 доб. 8001
+								br
+								br
+								| Пресс-служба: media@business.fadm.gov.ru
+							br
+							| Ответы на частые вопросы -
+							a(href="http://карьерамолодых.рф/docs/") FAQ
+	// end contacts

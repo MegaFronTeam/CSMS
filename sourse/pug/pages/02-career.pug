@@ -1,0 +1,44 @@
+extends ../layout/main.pug
+
+include ../customBlocks/page/_page.pug
+include ../customBlocks/newsBlock/_newsBlock.pug
+
+include ../customBlocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Карьера'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	//- +parts('header')
+	main
+		+page('', 'Росмолодёжь.</br>Карьера', 'https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/categories/logo-3.svg', 'img/header-block-1.png')
+			+b.organization
+				.content
+					h2
+						| Для чего данный трек
+					div(class="organization__wrap spacer_top")
+						div(class="organization__about")
+							p Трек Росмолодёжь.Карьера помогает молодым людям определиться со специализацией, получить необходимые навыки и компетенции и найти работу.
+					h4 Для кого
+					ul
+						li
+							+img('img/svg/organization-svg-1.svg')
+							p для амбициозных молодых людей
+						li
+							+img('img/svg/organization-svg-1.svg')
+							p для амбициозных молодых людей
+						li
+							+img('img/svg/organization-svg-1.svg')
+							p для амбициозных молодых людей
+						li
+							+img('img/svg/organization-svg-1.svg')
+							p для амбициозных молодых людей
+		+newsBlock
+	+footer()

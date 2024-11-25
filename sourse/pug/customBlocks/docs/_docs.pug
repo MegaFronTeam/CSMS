@@ -1,0 +1,26 @@
+mixin docItem(color)
+	div(class="docs__i docs-i")
+		div(class=`docs-i__overlay ${color}`)
+			div(class="docs-i__overlay-in")
+				a(href="#", class="docs-i__download", target="_blank") Скачать
+				div(class="docs-i__size") 1,4 МБ
+		div(class="docs-i__h")
+			div(class="docs-i__date") 05.03.2024
+			div(class=`docs-i__ic ${color}`)
+				span pdf
+		div(class="docs-i__ttl")
+			p План мероприятий по противодействию коррупции на 2024 год
+		div(class="docs-i__tags") План мероприятий
+
+mixin docs(title='Документы проекта', count=6, text)
+	// start docs
+	+b.SECTION.docs.section#docs&attributes(attributes)
+		.content
+			h2!= title
+			if text
+				+e.text!= text
+			.docs__cnt
+				-for(let i = 0; i < count; i++)
+					+docItem(i % 2 === 0 ? '__red' : '__blue')
+
+	// end docs

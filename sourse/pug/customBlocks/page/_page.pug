@@ -1,0 +1,25 @@
+mixin page(span, title, logo, bg)
+	// start page
+	+b.SECTION.page
+		.content
+			div(class="page__about")
+				.pager
+					a(href="/") Главная
+					svg.svg-icon.icon-pager-arrow
+						use(xlink:href="/static/assets/img/sprite.svg#icon-pager-arrow")
+					a(href="#") Треки
+					svg.svg-icon.icon-pager-arrow
+						use(xlink:href="/static/assets/img/sprite.svg#icon-pager-arrow")
+					span Росмолодёжь.Карьера
+				div(class="page__main")
+					div(class="page__main-bg")
+						+img(bg)
+					div(class="page__main-left")
+						h1
+							if span
+								span!= span
+							!= title
+						if logo
+							+e.img: +img(logo)
+		block
+	// end page

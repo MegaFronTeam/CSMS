@@ -1,0 +1,14 @@
+mixin form(data)
+	// start form
+	+b.SECTION.form.section#form&attributes(attributes)
+		.content
+			+img('img/svg/arrow.svg').arrow
+			h2 Остались вопросы?
+			form
+				+e.INPUT.input(name='text' type='text' placeholder='Имя')
+				+e.INPUT.input.js_mask-phone(name='number' type='text' placeholder='Имя')
+				+e.TEXTAREA.input(name='textarea' type='textarea' placeholder='Ваш вопрос')
+				button(type="submit") Отправить
+			+img('img/form-img-1.png').img
+				
+	// end form

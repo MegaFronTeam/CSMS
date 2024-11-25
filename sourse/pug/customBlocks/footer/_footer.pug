@@ -1,0 +1,43 @@
+mixin footer(data)
+	// start footer
+	footer.footer.content
+		div(class="footer__wrap")
+			div(class="footer__top spacer_top")
+				div(class="footer__left")
+					.site-map
+						ul(class="site-map__list")
+							li
+								a(href="/about/") Об организации
+							li
+								a(href="/team/") Наша команда
+							li
+								a(href="/news/") Новости
+							li
+								a(href="/events/") События
+						ul(class="site-map__list")
+							li
+								a(href="/libmedia/") Медиа
+							li
+								a(href="/docs/") Документы
+							li
+								a(href="/contacts/") Контакты
+				div(class="footer__right")
+					div(class="footer__contact")
+						a(href="tel:+74956688008", class="footer__contact-link") +7 (495) 668-80-08
+						p(class="footer__contact-info") доб. 8005
+					div(class="footer__contact")
+						a(href="mailto:info@business.fadm.gov.ru", class="footer__contact-link") info@business.fadm.gov.ru
+			div(class="footer__bottom spacer")
+				div(class="footer__left")
+					a(href="/", class="footer__logo")
+						img(src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/svg/ui/logo-footer.svg")
+					p.copyright 2023. ЦСМС. Все права защищены
+				div(class="footer__right")
+					.social
+						a(href="https://vk.com/rosmolodez.business", class="social__link")
+							svg.svg-icon.icon-social-vk
+								use(xlink:href="/static/assets/img/sprite.svg#icon-social-vk")
+						a(href="httsp://t.me/", class="social__link")
+							svg.svg-icon.icon-social-tl
+								use(xlink:href="/static/assets/img/sprite.svg#icon-social-tl")
+	// end footer

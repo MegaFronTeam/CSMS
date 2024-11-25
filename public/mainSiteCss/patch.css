@@ -1,0 +1,113 @@
+.logo {
+    /*background: url('../../assets/img/logo.png') no-repeat center;*/
+}
+.who:after {
+    background: url('../../assets/img/bg/who-decor.svg') no-repeat center;
+}
+.who__item-icon_1 {
+    background-image: url('../../assets/img/icons/icon-who-1.svg');
+}
+.who__item-icon_2 {
+    background-image: url('../../assets/img/icons/icon-who-2.svg');
+}
+.who__item-icon_3 {
+    background-image: url('../../assets/img/icons/icon-who-3.svg');
+}
+.who__item-icon_4 {
+    background-image: url('../../assets/img/icons/icon-who-4.svg');
+}
+.who__item-icon_5 {
+    background-image: url('../../assets/img/icons/icon-who-5.svg');
+}
+.category a {
+    color: inherit;
+}
+.footer__logo {
+    /*background: url('../../assets/img/footer-logo.png') no-repeat center;*/
+}
+.main__bg {
+    background: url('../../assets/img/bg/main-bg.png') no-repeat center;
+}
+.orange h3 {
+    color: #FC651A;
+}
+.blue h3 {
+    color: #0086FF;
+}
+.violet h3 {
+    color: #B78BF7;
+}
+.category:hover h3 {
+    color: #fff !important;
+}
+.orange:hover {
+    background: #FC651A;
+    color: #fff;
+}
+.blue:hover {
+    background: #0086FF;
+    color: #fff;
+}
+.violet:hover {
+    background: #B78BF7;
+    color: #fff;
+}
+.black-transparent-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 17px 23px 18px;
+    background: none;
+    border: 1px solid #000000;
+    color: #000000;
+}
+.black-transparent-btn:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+/* libmedia */
+.media__content {
+    padding: 0;
+}
+
+.media__filter-lnk {
+    color: #2f2f2f;
+}
+
+.modal__close {
+    background-image: url(../svg/ui/close-blue.svg);
+}
+.modal__close:hover {
+    background-image: url(../svg/ui/close-black.svg);
+}
+.header {
+    top: 0;
+}
+.footer__logo {
+    width: 150px;
+}
+/* events */
+.events-page__content {
+    padding: 0;
+}
+.events-page__cnt {
+    margin: 0px -15px 0;
+}
+.events-page__ttl {
+    margin: 20px auto 20px;
+}
+.events-page__filter {
+    margin: 20px auto 20px;
+}
+/* docs */
+.docs__content {
+    padding: 0;
+}
+/* contacts */
+.team__item-phone {
+    display: none;
+}

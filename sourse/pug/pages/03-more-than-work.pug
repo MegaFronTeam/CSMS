@@ -1,0 +1,56 @@
+extends ../layout/main.pug
+
+include ../customBlocks/page/_page.pug
+include ../customBlocks/docs/_docs.pug
+include ../customBlocks/newsBlock/_newsBlock.pug
+include ../customBlocks/form/_form.pug
+include ../customBlocks/partners/_partners.pug
+include ../customBlocks/contacts/_contacts.pug
+
+include ../customBlocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Карьера'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	//- +parts('header')
+	main
+		+page('Проект', 'Больше, чем работа', 'img/header-block-logo-1.png', 'img/header-block-2.png')
+			+b.organization
+				.content
+					+e.wrapper
+						div
+							h2 Для чего данный проект
+							div(class="organization__wrap spacer_top")
+								div(class="organization__about")
+									h4 Цель проекта:
+									p Создание условий профессионального<br>становления и развития молодёжи на территории Российской Федерации
+									p Сроки реализации проекта: май - декабрь 2024 года Слоган: Твое дело - это больше, чем работа!
+						+e.item-wrap
+							h4 Задачи проекта:
+							ul
+								li
+									+img('img/svg/organization-svg-1.svg')
+									p содействие профессиональному развитию молодежи
+								li
+									+img('img/svg/organization-svg-1.svg')
+									p привлечение молодых специалистов в регионы страны;
+								li
+									+img('img/svg/organization-svg-1.svg')
+									p демонстрация масштаба страны и мощностей промышленных предприятий;
+								li
+									+img('img/svg/organization-svg-1.svg')
+									p реализация программ стажировок;
+		+docs()
+		+newsBlock
+		+form()
+		+partners('Партнёры проекта')
+		+contacts
+	+footer()
