@@ -1,0 +1,67 @@
+mixin tabsContent(data)
+	// start tabsContent
+	+b.SECTION.tabsContent.section#tabsContent&attributes(attributes)
+		.content
+			.tabs
+				.tabs__caption
+					.tabs__btn.active Образовательные учреждения
+					.tabs__btn Предприятия
+				.tabs__content.active
+					+e.item.item_gray
+						+img(src="img/svg/tabsContent-bg.svg", alt="").zig
+						+img(src="img/tabsContent-img.png", alt="").girl
+						+e.content
+							+e.item-title Участие в проекте могут принять:
+							ul.list-wrap.list-img
+								li школьники старше 14 лет
+								li студенты вузов и СПО
+								li молодежные организации
+					+e.item.item_blue
+						+e.item-title Что получают участники?
+						+e.wrap
+							ul.list-regular
+								li Ознакомительную стажировку в ведущей отраслевой компании по своему профилю; 
+								li Знакомство с регионом;  
+								li Профессиональные навыки; 
+								li Встречу с потенциальным работодателем и возможность дальнейшего трудоустройства.
+							p Все расходы по организации «экспресс-стажировки», а именно проезд до места прохождения стажировки и в обратном направлении, питание и размещение участников оплачивается за счет государственной субсидии.
+						+e.item-title Документы для учреждений
+						+e.docs-wrap
+							a.docs__i.docs-i(href='#', download)
+								.docs-i__h
+									+img(src="img/svg/pdf.svg", alt="")
+									+img(src="img/svg/download.svg", alt="")
+								.docs-i__ttl
+									p Отчёт по исполнению плана мероприятий по противодействию коррупции
+								.docs-i__date 05.03.2024
+							a.docs__i.docs-i(href='#', download)
+								.docs-i__h
+									+img(src="img/svg/pdf.svg", alt="")
+									+img(src="img/svg/download.svg", alt="")
+								.docs-i__ttl
+									p Отчёт по исполнению плана мероприятий по противодействию коррупции
+								.docs-i__date 05.03.2024
+							a.docs__i.docs-i(href='#', download)
+								.docs-i__h
+									+img(src="img/svg/pdf.svg", alt="")
+									+img(src="img/svg/download.svg", alt="")
+								.docs-i__ttl
+									p Отчёт по исполнению плана мероприятий по противодействию коррупции
+								.docs-i__date 05.03.2024
+				.tabs__content
+					+e.flex-wrap
+						+e.item-p.item_gray
+							//- +img(src="img/tabsContent-card-bg.png", alt="").img-bg
+							+e.item-title Как принять участие?
+							ul.list-img 
+								li направление официального письма на имя директора ФГБУ "ЦСМС" о запросе квот на проведение стажировки;
+								li подписание соглашения;
+								li разработка программы пребывания участников; - формирование поездки;
+						+e.item-p.item_gray
+							+e.item-title Что получает предприятие? 
+							ul.list-img 
+								li направление официального письма на имя директора ФГБУ "ЦСМС" о запросе квот на проведение стажировки;
+								li подписание соглашения;
+								li разработка программы пребывания участников; - формирование поездки;
+
+	// end tabsContent

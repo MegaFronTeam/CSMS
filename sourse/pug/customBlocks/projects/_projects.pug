@@ -1,0 +1,24 @@
+mixin projects(data)
+	// start projects
+	+b.SECTION.projects.section#projects&attributes(attributes)
+		.content
+			h2 Трек реализует проекты
+			+e.wrap 
+				+e.item-p
+					+e.img-wrap
+						+img(src="img/projects-block.png", alt="").img-center
+				+e.item-p
+					+img(src="img/projects-block-bg.svg", alt="").img-p
+					+e.content-p
+						h4 Больше, чем работа
+						a(href='https://case-in.ru/') https://case-in.ru/
+						p Международный инженерный чемпионат «CASE-IN» - международная система соревнований по решению инженерных кейсов для школьников, студентов и молодых специалистов топливно-энергетического и минерально-сырьевого комплексов.
+						p Чемпионат реализуется с 2013 года.
+						.social
+							a(href="https://vk.com/rosmolodez.business", class="social__link")
+								svg.svg-icon.icon-social-vk
+									use(xlink:href="/static/assets/img/sprite.svg#icon-social-vk")
+							a(href="httsp://t.me/", class="social__link")
+								svg.svg-icon.icon-social-tl
+									use(xlink:href="/static/assets/img/sprite.svg#icon-social-tl")
+	// end projects

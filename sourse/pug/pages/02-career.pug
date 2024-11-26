@@ -2,6 +2,7 @@ extends ../layout/main.pug
 
 include ../customBlocks/page/_page.pug
 include ../customBlocks/newsBlock/_newsBlock.pug
+include ../customBlocks/projects/_projects.pug
 
 include ../customBlocks/footer/_footer.pug
 
@@ -40,5 +41,6 @@ block pagecontent
 						li
 							+img('img/svg/organization-svg-1.svg')
 							p для амбициозных молодых людей
+		+projects
 		+newsBlock
 	+footer()

@@ -7,6 +7,8 @@ include ../customBlocks/form/_form.pug
 include ../customBlocks/partners/_partners.pug
 include ../customBlocks/contacts/_contacts.pug
 include ../customBlocks/partners/_partners.pug
+include ../customBlocks/personExpectation/_personExpectation.pug
+include ../customBlocks/joinFirm/_joinFirm.pug
 
 include ../customBlocks/footer/_footer.pug
 
@@ -33,6 +35,8 @@ block pagecontent
 								div(class="organization__about")
 									p Открывают карьерные возможности в России для молодёжи во всех федеральных округах, включая новые территории.
 									p В 2022 году был проведён один карьерный форум в одном федеральном округе, в 2023 – 6 карьерных форумов в 6 федеральных округах, включая новые территории, в 2024 году будет проведено 8 карьерных форумов во всех федеральных округах, включая новые территории.
+		+personExpectation
+		+joinFirm
 		+newsBlock(3)
 		+docs('Документы', 3)
 		+partners('Партнёры проекта')

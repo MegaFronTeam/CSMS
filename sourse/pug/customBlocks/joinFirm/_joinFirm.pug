@@ -1,0 +1,20 @@
+mixin joinFirm(data)
+	// start joinFirm
+	+b.SECTION.joinFirm.section#joinFirm&attributes(attributes)
+		.content
+			+b.section-title.text-center
+				h2 Как стать участником
+				p Участником может стать любой гражданин России от 14 до 35 лет.
+			+e.cards
+				+img(src="img/svg/line.svg", alt="").line
+				+e.item.text-center
+					p Зарегистрируйся на платформе ФГАИС «Молодёжь России»
+					a(href="http://").blue-btn Регистрация
+				+e.item.text-center
+					p Следи за анонсированием мероприятий в своём городе в нашем телеграм канале #[a(href='https://t.me/rosmolodez_career1') https://t.me/rosmolodez_career1] или ВКонтакте #[a(href='https://vk.com/rosmolodez.career') https://vk.com/rosmolodez.career]
+				+e.item.text-center
+					p Зарегистрируйсе по ссылке на мероприятие на ФГАИС «Молодёжь России»
+
+
+	// end joinFirm
+
