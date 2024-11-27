@@ -38,18 +38,16 @@ mixin contacts(data)
 				div(class="manager contacts__col spacer_top")
 					img(class="manager__photo", src="	https://xn--80aamcxjgqbob0e0df.xn--p1ai/media/contacts/2024/6/20/%D1%81%D0%B2%D0%B5%D1%82%D0%B0_1.jpg", alt="Шалимова Светлана")
 					div(class="manager__right")
-						p(class="manager__title")
-							| По вопросам
-							br
-							| трудоустройства
+						p(class="manager__title") Руководитель проекта
 						p Митина Кристина,
 							br
 							| тел.
 							strong +7(495)-668-80-08 доб. 8001
 								br
 								br
-								| Пресс-служба: media@business.fadm.gov.ru
-							br
-							| Ответы на частые вопросы -
-							a(href="http://карьерамолодых.рф/docs/") FAQ
+						.social
+							a(href="https://vk.com/rosmolodez.business", class="social__link")
+								+icon('icon-social-vk')
+							a(href="httsp://t.me/", class="social__link")
+								+icon('icon-social-tl')
 	// end contacts

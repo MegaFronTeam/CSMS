@@ -95,6 +95,11 @@
       font-size: 20px;
     }
 
+    li {
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
     // list-style-image: url("/img/svg/check.svg");
   }
 
@@ -155,6 +160,7 @@
     }
 
     p {
+      font-weight: 400;
       @media (min-width: 992px) {
         font-size: 24px;
         margin-left: 30px;
@@ -166,6 +172,7 @@
     list-style-type: disc;
     margin-left: 30px;
     margin-bottom: 20px;
+    font-weight: 400;
     @media (min-width: 992px) {
       font-size: 24px;
     }
@@ -255,6 +262,7 @@
     display: flex;
     gap: 4px;
     margin-bottom: 12px;
+    font-weight: 500;
     @media (min-width: 568px) {
       margin-bottom: 22px;
     }

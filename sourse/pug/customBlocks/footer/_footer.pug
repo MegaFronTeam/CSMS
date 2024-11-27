@@ -35,9 +35,7 @@ mixin footer(data)
 				div(class="footer__right")
 					.social
 						a(href="https://vk.com/rosmolodez.business", class="social__link")
-							svg.svg-icon.icon-social-vk
-								use(xlink:href="/static/assets/img/sprite.svg#icon-social-vk")
+							+icon('icon-social-vk')
 						a(href="httsp://t.me/", class="social__link")
-							svg.svg-icon.icon-social-tl
-								use(xlink:href="/static/assets/img/sprite.svg#icon-social-tl")
+							+icon('icon-social-tl')
 	// end footer

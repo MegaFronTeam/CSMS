@@ -10,28 +10,46 @@ mixin who(data)
 					| «Центр содействия молодым специалистам» (ЦСМС) –
 					| подведомственное учреждение Федерального агентства
 					| по делам молодёжи (Росмолодёжь)
-			div(class="who__list flex-container")
-				div(class="who__item who__item_full-width")
-					i(class="who__item-icon who__item-icon_1")
-					p(class="who__item-text")
-						| Вовлекаем молодёжь в профессиональную,
+			ul(class="who__list flex-container")
+				li.who__item.who__item_full-width
+					+img('img/svg/organization-svg-1.svg').who__item-icon
+					p.who__item-text Вовлекаем молодёжь в профессиональную,
 						| предпринимательскую и инновационную деятельность
-				div(class="who__item")
-					i(class="who__item-icon who__item-icon_2")
-					p(class="who__item-text")
-						| Формируем надпрофессиональные навыки
-				div(class="who__item")
-					i(class="who__item-icon who__item-icon_3")
-					p(class="who__item-text")
-						| Создаём условия для поддержки молодёжных проектов
-				div(class="who__item")
-					i(class="who__item-icon who__item-icon_4")
-					p(class="who__item-text")
-						| Формируем молодёжные сообщества
-				div(class="who__item")
-					i(class="who__item-icon who__item-icon_5")
-					p(class="who__item-text")
-						| Открываем
+				li.who__item
+					+img('img/svg/organization-svg-1.svg').who__item-icon
+					p.who__item-text Формируем надпрофессиональные навыки
+				li.who__item
+					+img('img/svg/organization-svg-1.svg').who__item-icon
+					p.who__item-text Создаём условия для поддержки молодёжных проектов
+				li.who__item
+					+img('img/svg/organization-svg-1.svg').who__item-icon
+					p.who__item-text Формируем молодёжные сообщества
+				li.who__item
+					+img('img/svg/organization-svg-1.svg').who__item-icon
+					p.who__item-text Открываем
 						br
 						| таланты
+				//- div(class="")
+				//- 	i(class="who__item-icon who__item-icon_1")
+				//- 	p(class="who__item-text")
+				//- 		| Вовлекаем молодёжь в профессиональную,
+				//- 		| предпринимательскую и инновационную деятельность
+				//- div(class="who__item")
+				//- 	i(class="who__item-icon who__item-icon_2")
+				//- 	p(class="who__item-text")
+				//- 		| Формируем надпрофессиональные навыки
+				//- div(class="who__item")
+				//- 	i(class="who__item-icon who__item-icon_3")
+				//- 	p(class="who__item-text")
+				//- 		| Создаём условия для поддержки молодёжных проектов
+				//- div(class="who__item")
+				//- 	i(class="who__item-icon who__item-icon_4")
+				//- 	p(class="who__item-text")
+				//- 		| Формируем молодёжные сообщества
+				//- div(class="who__item")
+				//- 	i(class="who__item-icon who__item-icon_5")
+				//- 	p(class="who__item-text")
+				//- 		| Открываем
+				//- 		br
+				//- 		| таланты
 	// end who

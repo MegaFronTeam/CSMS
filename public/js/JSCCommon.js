@@ -415,7 +415,7 @@ class JSCCommon {
 		// this.modalCall();
 		this.tabsCostume('tabs');
 		this.mobileMenu();
-		// this.inputMask();
+		this.inputMask();
 		// this.sendForm();
 		this.heightWindow();
 		this.makeDDGroup();
