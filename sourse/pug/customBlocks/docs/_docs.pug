@@ -19,6 +19,8 @@ mixin docs(title='Документы проекта', count=6, text)
 			h2!= title
 			if text
 				+e.text!= text
+			if block 
+				block
 			.docs__cnt
 				-for(let i = 0; i < count; i++)
 					+docItem(i % 2 === 0 ? '__red' : '__blue')

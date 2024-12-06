@@ -3,7 +3,7 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
   @media (min-width: 992px) {
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 100px;
   }
 
@@ -18,7 +18,7 @@
       margin: auto;
     }
     @media (min-width: 768px) {
-      grid-template-columns: 1fr 1.9fr 1fr;
+      grid-template-columns: 1fr 1.7fr 1fr;
     }
     @media (min-width: 992px) {
       max-width: 1240px;

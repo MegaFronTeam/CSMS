@@ -2,22 +2,22 @@ mixin personExpectation(data)
 	// start personExpectation
 	+b.SECTION.personExpectation.section#personExpectation&attributes(attributes)
 		.content
-			h2 Что ждёт участников 
-			.tabsContent__flex-wrap
-				.tabsContent__item-p.item_gray
-					//- +img(src="img/tabsContent-card-bg.png", alt="").img-bg
+			.item-bg.item_white
+				+img(src="img/card-bg.png", alt="").img-bg
+				.tabsContent__item-p
 					.tabsContent__item-title Переговорка
-					ul.list-img 
+					ul.list-img.list-img_white
 						li Ярмарка профессий  
-						li Круглые столы, обсуждение проблем и поиск решений по привлечению молодёжи в передовые отрасли 
-						li Работа в группах, разработка проектов для решения выявленных проблем  
 						li Защита проектов перед экспертным советом  
+						li Круглые столы, обсуждение проблем и поиск решений по&nbsp;привлечению молодёжи в&nbsp;передовые отрасли 
 						li Награждение лучших команд
-				.tabsContent__item-p.item_gray
-					.tabsContent__item-title Маршрут карьеры
-					ul.list-img 
-						li Открытый диалог в режиме реального рабочего времени с потенциальными работодателями 
-						li Экскурсии на крупные предприятия Российской Фелерации
-						li Мастер-классы от опытных специалистов
+						li Работа в&nbsp;группах, разработка проектов для&nbsp;решения выявленных проблем  
+			.tabsContent__item-p.item_gray
+				.tabsContent__item-title Маршрут карьеры
+				ul.list-img 
+					li Открытый диалог в&nbsp;режиме реального рабочего времени с&nbsp;потенциальными работодателями 
+					li Экскурсии на&nbsp;крупные предприятия Российской Фелерации
+					li Мастер-классы от&nbsp;опытных специалистов
+				+img(src="img/exp-bg.png", alt="").img
 
 	// end personExpectation

@@ -83,6 +83,11 @@
 					flex: 0 0 calc(50% - 42px);
 				}
 			}
+			&--wider {
+				.organization__about {
+					max-width: 1000px !important;
+				}
+      }
 			&--full-size {
 				.organization__about {
 					max-width: 100%;

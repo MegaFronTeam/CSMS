@@ -86,4 +86,29 @@
 			}
 		}
 	}
+
+  &__policy {
+    color: #939393;
+    margin-bottom: 28px;
+    a {
+      color: #1A67FC;
+    }
+    input {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+  }
+  input[type="checkbox"] {
+    appearance: auto !important;
+    border-color: #CDCDCD !important;
+  }
+
 } // end.form
