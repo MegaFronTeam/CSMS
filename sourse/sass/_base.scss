@@ -255,6 +255,7 @@ ul {
 }
 
 .swiper-button-hand {
+  --swiperArrowSize: 35px;
 	width: var(--swiperArrowSize);
 	height: var(--swiperArrowSize);
 	border-radius: 50%;

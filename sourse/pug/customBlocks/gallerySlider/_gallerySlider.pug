@@ -1,0 +1,56 @@
+mixin gallerySlider(data)
+	// start gallerySlider
+	+b.SECTION.gallerySlider.section&attributes(attributes)
+		.content
+			h2 Галерея
+			.tabs.tabs-slider--js.swiper
+				.tabs__caption.swiper-wrapper
+					.tabs__btn.swiper-slide.active Старт Тех
+					.tabs__btn.swiper-slide Старт Тех
+					.tabs__btn.swiper-slide Старт Тех
+					.tabs__btn.swiper-slide Старт Тех
+				.tabs__content.active
+					+e.slider--js
+						+arrow
+						.swiper-wrapper
+							+e.slide.swiper-slide
+								+e.img-wrap.A(data-fancybox="gallery", href='img/slider-2.png')
+									+img(src="img/slider-2.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap.A(data-fancybox="gallery", href='img/slider-3.png')
+									+img(src="img/slider-3.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap.A(data-fancybox="gallery", href='img/slider-1.png')
+									+img(src="img/slider-1.png", alt="").img-bg
+							+e.slide.swiper-slide
+								+e.img-wrap.A(data-fancybox="gallery", href='img/slider-4.jpg')
+									+img(src="img/slider-4.jpg", alt="").img-bg
+						.swiper-pagination
+				- for (let i = 0; i < 3; i++)
+					.tabs__content
+						+e.slider--js
+							+arrow
+							.swiper-wrapper
+								+e.slide.swiper-slide
+									+e.img-wrap.A(data-fancybox=`gallery-${i}`, href='img/slider-1.png')
+										+img(src="img/slider-1.png", alt="").img-bg
+								+e.slide.swiper-slide
+									+e.img-wrap.A(data-fancybox=`gallery-${i}`, href='img/slider-2.png')
+										+img(src="img/slider-2.png", alt="").img-bg
+								+e.slide.swiper-slide
+									+e.img-wrap.A(data-fancybox=`gallery-${i}`, href='img/slider-3.png')
+										+img(src="img/slider-3.png", alt="").img-bg
+								+e.slide.swiper-slide
+									+e.img-wrap.A(data-fancybox=`gallery-${i}`, href='img/slider-1.png')
+										+img(src="img/slider-1.png", alt="").img-bg
+							.swiper-pagination
+	// end gallerySlider
+
+
+mixin arrow()
+	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+		+icon('chevron-left')
+	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+		+icon('chevron-right')
+
+

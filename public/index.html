@@ -6,7 +6,9 @@
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Nunito+Sans&amp;display=swap" rel="stylesheet">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Nunito+Sans&amp;display=swap" rel="stylesheet">
 		<link href="mainSiteCss/reset.css" rel="stylesheet"/>
 		<link href="mainSiteCss/style.css" rel="stylesheet"/>
 		<link href="mainSiteCss/modern_style.css" rel="stylesheet"/>
@@ -102,23 +104,29 @@
 					<div class="content">
 						<div class="project__wrap" style="--bg: linear-gradient(0deg, rgba(26, 103, 252, 0.35), rgba(26, 103, 252, 0.35))">
 							<div class="project__text">
-								<h4>Проект Точки притяжения</h4>
-								<p>
-									Конкурс на формирование группы
-									пространств, которые являются местом
-									притяжения, общения и генерации идей
-									российской молодёжи. На этих площадках
-									встречаются эксперты и молодёжь из
-									регионов, проводятся форумы, мастер-
-									классы, семинары и встречи.
-								</p>
-							</div><a class="white-transparent-btn project__link" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><img class="project__bg photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/bg.jpg" alt="Фон"/><img class="project__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/logo.svg" alt="Лого"/>
+								<div class="wrap">
+									<h4>Проект Точки притяжения</h4>
+									<p>
+										Конкурс на формирование группы
+										пространств, которые являются местом
+										притяжения, общения и генерации идей
+										российской молодёжи. На этих площадках
+										встречаются эксперты и молодёжь из
+										регионов, проводятся форумы, мастер-
+										классы, семинары и встречи.
+									</p>
+								</div>
+								<div class="project__l"><a class="white-transparent-btn" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><a class="white-btn" href="#" target="_blank">Регистрация</a></div>
+							</div><img class="project__bg photo-full-size" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/bg.jpg" alt="Фон"/><img class="project__logo" src="https://xn--80aamcxjgqbob0e0df.xn--p1ai/static/assets/img/project/logo.svg" alt="Лого"/>
 						</div>
 						<div class="project__wrap" style="--bg: rgba(108, 54, 254, 0.43)">
 							<div class="project__text">
-								<h4>Проект Молодёжные советы</h4>
-								<p>Молодёжные советы компаний - это сообщества молодых сотрудников, созданные для поддержки социально трудовой адаптации и интеграции молодёжи в корпоративные и производственные процессы. </p>
-							</div><a class="white-transparent-btn project__link" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><img class="project__bg photo-full-size" src="img/project-bg-2.png" alt="Фон"/><img class="project__logo" src="img/svg/project-logo-3.svg" alt="Лого"/>
+								<div class="wrap">
+									<h4>Проект Молодёжные советы</h4>
+									<p>Молодёжные советы компаний - это сообщества молодых сотрудников, созданные для поддержки социально трудовой адаптации и интеграции молодёжи в корпоративные и производственные процессы. </p>
+								</div>
+								<div class="project__l"><a class="white-transparent-btn" href="https://xn----jtbcgbci3acnlsh7d5ge.xn--p1ai/" target="_blank">Узнать больше</a><a class="white-btn" href="#" target="_blank">Регистрация</a></div>
+							</div><img class="project__bg photo-full-size" src="img/project-bg-2.png" alt="Фон"/><img class="project__logo" src="img/svg/project-logo-3.svg" alt="Лого"/>
 						</div>
 					</div>
 				</section>
@@ -197,6 +205,153 @@
 					<div class="events__bottom"><a class="blue-transparent-btn events__else" href="/events/">Показать еще</a></div>
 				</section>
 				<!-- end events-->
+				<!-- start gallerySlider-->
+				<section class="gallerySlider section">
+					<div class="content">
+						<h2>Галерея</h2>
+						<div class="tabs tabs-slider--js swiper">
+							<div class="tabs__caption swiper-wrapper">
+								<div class="tabs__btn swiper-slide active">Старт Тех</div>
+								<div class="tabs__btn swiper-slide">Старт Тех</div>
+								<div class="tabs__btn swiper-slide">Старт Тех</div>
+								<div class="tabs__btn swiper-slide">Старт Тех</div>
+							</div>
+							<div class="tabs__content active">
+								<div class="gallerySlider__slider gallerySlider__slider--js">
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon chevron-left svg-icon icon-chevron-left ">
+											<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon chevron-right svg-icon icon-chevron-right ">
+											<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery" href="img/slider-2.png"><img class="img-bg" src="img/slider-2.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery" href="img/slider-3.png"><img class="img-bg" src="img/slider-3.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery" href="img/slider-4.jpg"><img class="img-bg" src="img/slider-4.jpg" alt="" loading="lazy"/>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="gallerySlider__slider gallerySlider__slider--js">
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon chevron-left svg-icon icon-chevron-left ">
+											<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon chevron-right svg-icon icon-chevron-right ">
+											<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-0" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-0" href="img/slider-2.png"><img class="img-bg" src="img/slider-2.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-0" href="img/slider-3.png"><img class="img-bg" src="img/slider-3.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-0" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="gallerySlider__slider gallerySlider__slider--js">
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon chevron-left svg-icon icon-chevron-left ">
+											<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon chevron-right svg-icon icon-chevron-right ">
+											<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-1" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-1" href="img/slider-2.png"><img class="img-bg" src="img/slider-2.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-1" href="img/slider-3.png"><img class="img-bg" src="img/slider-3.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-1" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="gallerySlider__slider gallerySlider__slider--js">
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon chevron-left svg-icon icon-chevron-left ">
+											<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon chevron-right svg-icon icon-chevron-right ">
+											<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-2" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-2" href="img/slider-2.png"><img class="img-bg" src="img/slider-2.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-2" href="img/slider-3.png"><img class="img-bg" src="img/slider-3.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+										<div class="gallerySlider__slide swiper-slide">
+											<a class="gallerySlider__img-wrap" data-fancybox="gallery-2" href="img/slider-1.png"><img class="img-bg" src="img/slider-1.png" alt="" loading="lazy"/>
+											</a>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end gallerySlider-->
 				<!-- start partners-->
 				<section class="partners content">
 					<div class="block-top spacer">
@@ -295,6 +450,8 @@
 		<!-- #modal-call-->
 		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
 		<script src="libs/inputmask/inputmask.min.js"> </script>
 		<script src="js/JSCCommon.js"></script>
 		<script src="js/common.js"></script>

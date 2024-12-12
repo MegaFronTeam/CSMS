@@ -43,22 +43,35 @@ function eventHandler() {
 		},
 	};
 
-	// new Swiper(".breadcrumb-slider--js", {
-	// 	slidesPerView: "auto",
-	// 	freeMode: true,
-	// 	watchOverflow: true,
-	// });
+  const swiperTabs = new Swiper('.tabs-slider--js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchOverflow: true,
+		spaceBetween: 12,
+	});
 
-	// const swiper4 = new Swiper(".sBanners__slider--js", {
-	// 	// slidesPerView: 5,
-	// 	...defaultSl,
-	// 	slidesPerView: "auto",
-	// 	freeMode: true,
-	// 	loopFillGroupWithBlank: true,
-	// 	touchRatio: 0.2,
-	// 	slideToClickedSlide: true,
-	// 	freeModeMomentum: true,
-	// });
+  const mediaSwiper = new Swiper(".gallerySlider__slider--js", {
+
+		slidesPerView: 1,
+		spaceBetween: 50,
+    observeParents: true,
+		navigation: {
+			nextEl: ".gallerySlider .swiper-button-next",
+			prevEl: ".gallerySlider .swiper-button-prev",
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true, 
+		},
+    breakpoints: {
+      992: {
+        centeredSlides: true,
+        initialSlide: 1,
+        spaceBetween: 0,
+      }
+    }
+	});
 }
 if (document.readyState !== "loading") {
 	eventHandler();
